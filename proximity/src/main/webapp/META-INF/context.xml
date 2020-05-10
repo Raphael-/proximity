@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context>
+	<Resource name="jdbc/geodb" auth="Container"
+		type="javax.sql.DataSource" username="test" password="pass"
+		driverClassName="org.h2.Driver" url="jdbc:h2:mem:db;INIT=RUNSCRIPT FROM 'classpath:scripts/initialize.sql'"
+		maxTotal="1" maxIdle="1" />
+</Context>

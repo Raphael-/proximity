@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="FETCH_NEAREST_POINT">
+		<![CDATA[
+			SELECT L.*,  (SELECT ST_DistanceSphere('POINT (:latitude :longitude)', L.COORDINATES)) AS DISTANCE 
+			FROM LOCATION AS L 
+			ORDER BY DISTANCE 
+			FETCH FIRST ROW ONLY
+		]]>
+	</entry>
+	<entry key="FETCH_POINTS_BY_HITS">
+		<![CDATA[
+			SELECT * FROM LOCATION WHERE HITS >= ?
+		]]>
+	</entry>
+	<entry key="INCREMENT_POINT_HITS">
+		<![CDATA[
+			UPDATE LOCATION SET HITS = HITS + 1 WHERE ID = ?
+		]]>
+	</entry>
+</properties>
