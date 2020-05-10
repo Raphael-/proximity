@@ -12,10 +12,11 @@ This project uses an embedded tomcat server, in order to keep installation steps
 - Linux
   1. chmod +x mvnw
   2. ./mvnw clean install tomee:run
+To stop the server run (according to your platform) mvn tomee:stop
 
 # WSDL File location
 You can find the wsdl file in http://localhost:8080/proximity-1.0.0/ProximitySoapService?wsdl
 
 # WSDL Sample Requests
-
- To stop the server run (according to your platform) mvn tomee:stop
+Sample requests for the SOAP service are located in sample_requests folder
+ 
