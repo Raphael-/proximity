@@ -5,7 +5,7 @@ This project uses an embedded tomcat server, in order to keep installation steps
 # Installation instructions
 1. JDK 8 or later is required to run the project. JAVA_HOME variable should point to jdk installation.
 2. First, checkout the code with the command **git clone https://github.com/Raphael-/proximity.git**
-3. Go to proximity directory (root folder of the checked out project)
+3. Go to directory that contains the maven wrapper by executing cd proximity/proximity
 
 - Windows
   1. mvnw.cmd clean install tomee:run
