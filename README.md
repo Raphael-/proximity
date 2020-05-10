@@ -11,6 +11,6 @@ This project uses an embedded tomcat server, in order to keep installation steps
   1. mvnw.cmd clean install tomee:run
 - Linux
   1. chmod +x mvnw
-  2. mvnw clean install tomee:run
+  2. ./mvnw clean install tomee:run
  
  To stop the server run (according to your platform) mvn tomee:stop
