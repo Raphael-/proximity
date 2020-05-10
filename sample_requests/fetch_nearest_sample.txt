@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.proximity.rmagkos.gr/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getLabelOfNearestPoint>
+         <!--Optional:-->
+         <arg0>
+            <latitude>35.008852</latitude>
+            <longitude>22.688316</longitude>
+         </arg0>
+      </ser:getLabelOfNearestPoint>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.proximity.rmagkos.gr/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:fetchPointsHavingHitsMoreThan>
+         <arg0>1</arg0>
+      </ser:fetchPointsHavingHitsMoreThan>
+   </soapenv:Body>
+</soapenv:Envelope>
